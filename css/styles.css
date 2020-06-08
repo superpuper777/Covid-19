@@ -1,0 +1,153 @@
+/* red-hat-display-regular - latin */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Red Hat Display"), local("RedHatDisplay-Regular"),
+    url("../fonts/red-hat-display-v3-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/red-hat-display-v3-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* red-hat-display-700 - latin */
+@font-face {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Red Hat Display Bold"), local("RedHatDisplay-Bold"),
+    url("../fonts/red-hat-display-v3-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/red-hat-display-v3-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ubuntu-regular - latin */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu Regular"), local("Ubuntu-Regular"),
+    url("../fonts/ubuntu-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/ubuntu-v14-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ubuntu-500 - latin */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Ubuntu Medium"), local("Ubuntu-Medium"),
+    url("../fonts/ubuntu-v14-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/ubuntu-v14-latin-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* ubuntu-700 - latin */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Ubuntu Bold"), local("Ubuntu-Bold"),
+    url("../fonts/ubuntu-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/ubuntu-v14-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #4b4f51;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+
+.content__wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* header styles start */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 60px;
+  background: linear-gradient(360deg, #ffffff -4.58%, #ffffff 102.22%);
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header__item {
+  margin-right: 60px;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+  color: #ff383d;
+  padding: 16px 45px;
+  border: 2px solid #ff383d;
+  border-radius: 30px;
+}
+
+.header__link {
+  font-size: 18px;
+  line-height: 22px;
+  color: #035755;
+  text-decoration: none;
+}
+
+.highlighter {
+  color: #fb4c47;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+  opacity: 0.7;
+}
+
+/* header styles end */
+
+/* intro styles start */
+
+.intro {
+  height: 815px;
+  /* height: 50vh; */
+  background: url(../img/header_bg.png) no-repeat right center;
+}
+
+/* intro styles end */
