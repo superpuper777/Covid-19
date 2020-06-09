@@ -106,7 +106,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 25px;
+  padding: 15px 0;
 }
 
 .header__list {
@@ -140,8 +140,15 @@ body {
 
 .header__link:hover,
 .header__link:focus,
-.header__link:active {
+.header__link:active,
+.header__link_last:hover,
+.header__link_last:active,
+.header__link_last:focus {
   opacity: 0.7;
+}
+
+.header__link_last {
+  text-decoration: none;
 }
 
 /* header styles end */
