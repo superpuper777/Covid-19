@@ -196,23 +196,22 @@ body {
 .description {
   height: 100vh;
   background: url(../img/desc_bg.png) no-repeat left center;
-  padding-top: 160px;
+  padding-top: 220px;
+  margin-bottom: 188px;
 }
-
-.desc__content {
-  position: relative;
+.desc__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
   float: right;
-  width: 50%;
 }
 
 .desc__text {
-  /* max-width: 340px; */
   display: inline-block;
   margin-bottom: 53px;
 }
 
 .desc__more {
-  /* float: right; */
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
