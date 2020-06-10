@@ -202,7 +202,10 @@ body {
 
 .description {
   height: 100vh;
-  background: url(../img/desc_bg.png) no-repeat left center;
+  background: url(../img/desc_bg.png), url(../img/desc_bg-2.png),
+    url(../img/desc_bg-3.png);
+  background-repeat: no-repeat;
+  background-position: left center, right bottom 35%, right bottom;
   padding-top: 220px;
   margin-bottom: 188px;
 }
@@ -237,3 +240,7 @@ body {
 }
 
 /* description styles end */
+
+/* contagion styles start */
+
+/* contagion styles end */
