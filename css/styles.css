@@ -81,6 +81,11 @@ body {
   font-weight: normal;
   color: #4b4f51;
   text-transform: capitalize;
+  background: linear-gradient(
+    360deg,
+    rgba(255, 241, 241, 0.5) 0%,
+    rgba(255, 241, 241, 0) 108.69%
+  );
 }
 
 .content__wrapper {
@@ -376,7 +381,6 @@ body {
 
 /* map styles start */
 .map {
-  height: 100vh;
   margin-bottom: 150px;
 }
 .map__images {
@@ -385,13 +389,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.map__content {
-  background: linear-gradient(
-    360deg,
-    rgba(255, 241, 241, 0.5) 0%,
-    rgba(255, 241, 241, 0) 108.69%
-  );
-}
+
 .map__countries {
   background: url(../img/map_bg.png) no-repeat left center;
 }
@@ -471,3 +469,59 @@ body {
   background: url(../img/map_down_arrow.png) no-repeat right center;
 }
 /* map styles end */
+
+/* feedback styles start */
+
+/* feedback styles end */
+.feedback {
+  margin-bottom: 100px;
+}
+.feedback__content {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.feedback__title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: #0c6c44;
+  margin-bottom: 60px;
+}
+.feedback__form-info {
+  position: relative;
+}
+
+.feedback__form-field {
+  width: 790px;
+  height: 114px;
+  border: 0;
+  background: white;
+  border-radius: 60px;
+  padding: 40px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #758681;
+}
+
+.feedback__form-field::placeholder {
+  font-size: 22px;
+  line-height: 26px;
+  color: #758681;
+}
+
+.feedback__form_submit {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  width: 200px;
+  height: 80px;
+  background: #f44a45;
+  border: 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  border-radius: 60px;
+  color: #ffffff;
+}
