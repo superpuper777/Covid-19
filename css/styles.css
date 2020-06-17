@@ -373,3 +373,101 @@ body {
   max-width: 530px;
 }
 /* actions styles end  */
+
+/* map styles start */
+.map {
+  height: 100vh;
+  margin-bottom: 150px;
+}
+.map__images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.map__content {
+  background: linear-gradient(
+    360deg,
+    rgba(255, 241, 241, 0.5) 0%,
+    rgba(255, 241, 241, 0) 108.69%
+  );
+}
+.map__countries {
+  background: url(../img/map_bg.png) no-repeat left center;
+}
+.usa {
+  background: url(../img/map_country_usa.png) no-repeat left center;
+}
+
+.italy {
+  background: url(../img/map_country_italy.png) no-repeat left center;
+}
+
+.china {
+  background: url(../img/map_country_china.png) no-repeat left center;
+}
+
+.spain {
+  background: url(../img/map_country_spain.png) no-repeat left center;
+}
+
+.germany {
+  background: url(../img/map_country_germany.png) no-repeat left center;
+}
+
+.iran {
+  background: url(../img/map_country_iran.png) no-repeat left center;
+}
+
+.map__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 20px;
+}
+.map__live_reports {
+  background: #fff;
+  box-shadow: 1px 2px 18px -14px rgba(0, 0, 0, 0.64);
+  padding: 10px;
+}
+
+.map__live_reports-title {
+  background: url(../img/map_main_arrows.png) no-repeat right center;
+  margin-bottom: 55px;
+  padding-right: 160px;
+}
+
+.map__title {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 58px;
+}
+.map__live_reports-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.map__country_name {
+  padding-left: 80px;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 37px;
+}
+
+.map_number {
+  padding-right: 50px;
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 37px;
+}
+
+.map__live_reports-counter {
+  background: url(../img/map_top_arrow.png) no-repeat right center;
+}
+.down {
+  background: url(../img/map_down_arrow.png) no-repeat right center;
+}
+/* map styles end */
