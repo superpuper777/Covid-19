@@ -21,16 +21,16 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#!" class="header__link">Overview</a>
+                <a href="#overview" class="header__link js-scroll">Overview</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Contagion</a>
+                <a href="#contagion" class="header__link js-scroll">Contagion</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Symptoms</a>
+                <a href="#symptomps" class="header__link js-scroll">Symptomps</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Prevention</a>
+                <a href="#prevention" class="header__link js-scroll">Prevention</a>
               </li>
               <li class="header__item">
                 <a href="#!" class="header__link_last highlighter">Contact</a>
@@ -60,7 +60,7 @@
 
     <!-- intro end -->
     <!-- description start -->
-    <section class="description">
+    <section class="description" id="overview">
       <div class="content__wrapper">
         <div class="desc__wrapper">
           <div class="desc__content">
@@ -79,7 +79,7 @@
     <!-- description end -->
 
     <!-- contagion start -->
-    <section class="contagion">
+    <section class="contagion" id="contagion">
       <div class="content__wrapper">
         <h2 class="contagion__title title">
           <span class="subtitle">COVID-19 Alert</span><br>
@@ -126,7 +126,7 @@
     </section>
     <!-- contagion end -->
     <!-- symptomps start -->
-    <section class="symptomps">
+    <section class="symptomps" id="symptomps">
       <div class="content__wrapper">
         <h2 class="symptomps__title title"><span class="subtitle">COVID-19 Alert</span><br>Symptomps</h2>
         <p class="symptomps__text">
@@ -139,7 +139,7 @@
     </section>
     <!-- symptomps end -->
     <!-- actions start -->
-    <section class="actions">
+    <section class="actions" id="prevention">
       <div class="content__wrapper">
         <h2 class="actions__title title"><span class="subtitle">COVID-19 Alert</span><br>What should we do</h2>
         <div class="actions__title-content">
@@ -280,7 +280,6 @@
       </div>
     </section>
     <!-- map end -->
-
     <!-- feedback start -->
     <section class="feedback">
       <div class="content__wrapper">
@@ -292,7 +291,9 @@
           <fieldset class="feedback__form_wrap">
             <p class="feedback__form-info">
               <input type="text" placeholder="snmonydemo@gmail.com" class="feedback__form-field">
-              <button type="submit" class="feedback__form_submit">Send</button>
+              <button href="#!"type="submit" class="feedback__form_submit state-0">
+                <span class="pre_state_msg">Send</span>
+              </button>
             </p>
           </fieldset>
         </form>
@@ -305,3 +306,4 @@
   <script src="./js/main.js"></script>
 </body>
 </html>
+

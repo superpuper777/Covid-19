@@ -6,7 +6,7 @@
   src: local("Red Hat Display"), local("RedHatDisplay-Regular"),
     url("../fonts/red-hat-display-v3-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/red-hat-display-v3-latin-regular.woff") format("woff");
+    url("../fonts/red-hat-display-v3-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -18,7 +18,7 @@
   src: local("Red Hat Display Bold"), local("RedHatDisplay-Bold"),
     url("../fonts/red-hat-display-v3-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/red-hat-display-v3-latin-700.woff") format("woff");
+    url("../fonts/red-hat-display-v3-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -30,7 +30,7 @@
   src: local("Ubuntu Regular"), local("Ubuntu-Regular"),
     url("../fonts/ubuntu-v14-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/ubuntu-v14-latin-regular.woff") format("woff");
+    url("../fonts/ubuntu-v14-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -42,7 +42,7 @@
   src: local("Ubuntu Medium"), local("Ubuntu-Medium"),
     url("../fonts/ubuntu-v14-latin-500.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/ubuntu-v14-latin-500.woff") format("woff");
+    url("../fonts/ubuntu-v14-latin-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -54,7 +54,7 @@
   src: local("Ubuntu Bold"), local("Ubuntu-Bold"),
     url("../fonts/ubuntu-v14-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/ubuntu-v14-latin-700.woff") format("woff");
+    url("../fonts/ubuntu-v14-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -81,11 +81,9 @@ body {
   font-weight: normal;
   color: #4b4f51;
   text-transform: capitalize;
-  background: linear-gradient(
-    360deg,
-    rgba(255, 241, 241, 0.5) 0%,
-    rgba(255, 241, 241, 0) 108.69%
-  );
+  background: linear-gradient(360deg,
+      rgba(255, 241, 241, 0.5) 0%,
+      rgba(255, 241, 241, 0) 108.69%);
 }
 
 .content__wrapper {
@@ -206,6 +204,7 @@ body {
   color: #fa5652;
   background: rgba(250, 86, 82, 0.15);
 }
+
 /* intro styles end */
 
 /* description styles start */
@@ -218,6 +217,7 @@ body {
   background-position: left center, right bottom 35%, right bottom;
   padding-top: 220px;
 }
+
 .desc__wrapper {
   display: flex;
   flex-direction: column;
@@ -254,6 +254,7 @@ body {
 .contagion {
   margin-bottom: 150px;
 }
+
 .contagion__title {
   text-align: center;
   margin-bottom: 30px;
@@ -296,9 +297,11 @@ body {
   object-fit: cover;
   object-position: bottom;
 }
+
 .contagion__card-text {
   max-width: 355px;
 }
+
 .contagion__card-title {
   font-weight: 500;
   font-size: 36px;
@@ -335,6 +338,7 @@ body {
   background-repeat: no-repeat;
   background-position: left top 25%, right bottom 20%, right bottom 5%;
 }
+
 .actions__text {
   max-width: 650px;
   margin: 0 auto;
@@ -343,6 +347,7 @@ body {
 .actions__title-content {
   margin-bottom: 70px;
 }
+
 .actions__card {
   display: flex;
   flex-wrap: wrap;
@@ -362,27 +367,33 @@ body {
 .one {
   background: url(../img/actions__card-one-bg.png) no-repeat left center;
 }
+
 .two {
   background: url(../img/actions__card-two-bg.png) no-repeat left center;
 }
+
 .three {
   background: url(../img/actions__card-three-bg.png) no-repeat left center;
 }
+
 .four {
   background: url(../img/actions__card-four-bg.png),
     url(../img/actions__card-four-ellip.png);
   background-repeat: no-repeat;
   background-position: left 2% center, left center;
 }
+
 .actions__card-decr-text {
   max-width: 530px;
 }
+
 /* actions styles end  */
 
 /* map styles start */
 .map {
   margin-bottom: 150px;
 }
+
 .map__images {
   display: flex;
   flex-wrap: wrap;
@@ -393,6 +404,7 @@ body {
 .map__countries {
   background: url(../img/map_bg.png) no-repeat left center;
 }
+
 .usa {
   background: url(../img/map_country_usa.png) no-repeat left center;
 }
@@ -422,6 +434,7 @@ body {
   grid-template-columns: 2fr 1fr;
   column-gap: 20px;
 }
+
 .map__live_reports {
   background: #fff;
   box-shadow: 1px 2px 18px -14px rgba(0, 0, 0, 0.64);
@@ -439,6 +452,7 @@ body {
   font-size: 46px;
   line-height: 58px;
 }
+
 .map__live_reports-row {
   display: flex;
   flex-wrap: wrap;
@@ -465,17 +479,38 @@ body {
 .map__live_reports-counter {
   background: url(../img/map_top_arrow.png) no-repeat right center;
 }
+
 .down {
   background: url(../img/map_down_arrow.png) no-repeat right center;
 }
+
 /* map styles end */
 
 /* feedback styles start */
 
 /* feedback styles end */
+@keyframes short-press {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hide {
+  display: none;
+}
+
 .feedback {
   margin-bottom: 100px;
 }
+
 .feedback__content {
   width: 700px;
   margin: 0 auto;
@@ -489,6 +524,7 @@ body {
   color: #0c6c44;
   margin-bottom: 60px;
 }
+
 .feedback__form-info {
   position: relative;
 }
@@ -524,4 +560,35 @@ body {
   line-height: 26px;
   border-radius: 60px;
   color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.feedback__form_submit:hover,
+.feedback__form_submit:active,
+.feedback__form_submit:focus {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(4px);
+}
+
+.animated {
+  animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.feedback__form_submit>span {
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+.pre-state-msg span {
+  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition-delay: 0.75s;
+}
+
+.state-1 {
+  margin-top: -5px;
+}
+
+.state-2 {
+  margin-top: -5px;
 }
