@@ -30,44 +30,46 @@ const finalButtonMsg = function () {
 
 const setInitialButtonState = function () {
   button.classList.remove('state-1', 'state-2', 'animated');
+  button.textContent = "Send";
 };
 
 button.addEventListener('click', updateButtonMsg);
 
-// (function () {
+(function () {
 
-//   const smoothScroll = function (targetEl, duration) {
-//     const headerElHeight = document.querySelector(".header").clientHeight;
-//     let target = document.querySelector(targetEl);
-//     let targetPosition = target.getBoundingClientRect().top - headerElHeight;
-//     let startPosition = window.pageYOffset;
-//     let startTime = null;
+  const smoothScroll = function (targetEl, duration) {
+    const headerElHeight = document.querySelector(".header").clientHeight;
+    let target = document.querySelector(targetEl);
+    let targetPosition = target.getBoundingClientRect().top - headerElHeight;
+    let startPosition = window.pageYOffset;
+    let startTime = null;
 
-//     const ease = function (p, b, c, d) {
-//       p /= d / 2;
-//       if (p < 1) return c / 2 * p * p + b;
-//       p--;
-//       return -c / 2 * (p * (p - 2) - 1) + b;
-//     };
+    const ease = function (t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t + b;
+      t--;
+      return -c / 2 * (t * (t - 2) - 1) + b;
+    };
 
-//     const animation = function (timestamp) {
-//       if (!startTime) startTime = timestamp;
-//       let progress = timestamp - startTime;
-//       const run = ease(progress, startPosition, targetPosition, duration);
-//       window.scrollTo(0, run);
-//       if (timestamp < duration) requestAnimationFrame(animation);
-//     };
-//     requestAnimationFrame(animation);
-//   };
+    const animation = function (currentTime) {
+      if (!startTime) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const run = ease(timeElapsed, startPosition, targetPosition, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) requestAnimationFrame(animation);
+    };
 
-//   const scrollTo = function () {
-//     const links = document.querySelectorAll('.js-scroll');
-//     links.forEach(link => {
-//       link.addEventListener('click', function () {
-//         const currentTarget = this.getAttribute('href');
-//         smoothScroll(currentTarget, 1000);
-//       });
-//     });
-//   };
-//   scrollTo();
-// }());
+    requestAnimationFrame(animation);
+  };
+
+  const scrollTo = function () {
+    const links = document.querySelectorAll('.js-scroll');
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        const currentTarget = this.getAttribute('href');
+        smoothScroll(currentTarget, 1000);
+      });
+    });
+  };
+  scrollTo();
+}());
