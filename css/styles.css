@@ -6,7 +6,7 @@
   src: local("Red Hat Display"), local("RedHatDisplay-Regular"),
     url("../fonts/red-hat-display-v3-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/red-hat-display-v3-latin-regular.woff") format("woff");
+      url("../fonts/red-hat-display-v3-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -18,7 +18,7 @@
   src: local("Red Hat Display Bold"), local("RedHatDisplay-Bold"),
     url("../fonts/red-hat-display-v3-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/red-hat-display-v3-latin-700.woff") format("woff");
+      url("../fonts/red-hat-display-v3-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -30,7 +30,7 @@
   src: local("Ubuntu Regular"), local("Ubuntu-Regular"),
     url("../fonts/ubuntu-v14-latin-regular.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/ubuntu-v14-latin-regular.woff") format("woff");
+      url("../fonts/ubuntu-v14-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -42,7 +42,7 @@
   src: local("Ubuntu Medium"), local("Ubuntu-Medium"),
     url("../fonts/ubuntu-v14-latin-500.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/ubuntu-v14-latin-500.woff") format("woff");
+      url("../fonts/ubuntu-v14-latin-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -54,7 +54,7 @@
   src: local("Ubuntu Bold"), local("Ubuntu-Bold"),
     url("../fonts/ubuntu-v14-latin-700.woff2") format("woff2"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("../fonts/ubuntu-v14-latin-700.woff") format("woff");
+      url("../fonts/ubuntu-v14-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -81,9 +81,11 @@ body {
   font-weight: normal;
   color: #4b4f51;
   text-transform: capitalize;
-  background: linear-gradient(360deg,
-      rgba(255, 241, 241, 0.5) 0%,
-      rgba(255, 241, 241, 0) 108.69%);
+  background: linear-gradient(
+    360deg,
+    rgba(255, 241, 241, 0.5) 0%,
+    rgba(255, 241, 241, 0) 108.69%
+  );
 }
 
 .content__wrapper {
@@ -130,7 +132,7 @@ body {
 .header__item:last-child {
   margin-right: 0;
   color: #ff383d;
-  padding: 16px 45px;
+  padding: 10px 25px;
   border: 2px solid #ff383d;
   border-radius: 50px;
 }
@@ -277,6 +279,8 @@ body {
 }
 
 .contagion__card {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 350px;
   background: #ffffff;
   box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
@@ -578,7 +582,7 @@ body {
   animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 
-.feedback__form_submit>span {
+.feedback__form_submit > span {
   display: block;
   color: white;
   text-align: center;
@@ -598,7 +602,8 @@ body {
 }
 
 /* footer styles start */
-footer {}
+footer {
+}
 
 .footer__wrapper {
   display: flex;
@@ -612,7 +617,7 @@ footer {}
   margin-right: 100px;
   padding: 0;
   border: 0;
-  border-radius: 0
+  border-radius: 0;
 }
 
 .header__nav {
@@ -627,7 +632,6 @@ footer {}
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
 }
 
 .footer__item {
@@ -636,10 +640,73 @@ footer {}
 
 .footer__rights {
   text-align: center;
-  color: #415E56;
+  color: #415e56;
   font-size: 15px;
   line-height: 21px;
   margin-bottom: 20px;
 }
 
 /* footer styles end */
+/* Media start*/
+@media screen and (max-width: 1024px) {
+  .header__wrapper,
+  .footer__wrapper {
+    padding: 20px;
+  }
+
+  .intro {
+    padding-left: 60px;
+    background: url(../img/intro_bg_center.png),
+      url(../img/intro_bg_right_lg.png), url(../img/intro_bg_right_sm.png);
+    background-repeat: no-repeat;
+    background-position: center bottom 20%, right center, right 20% top 20%;
+  }
+
+  .description {
+    max-height: 600px;
+    margin-top: 0;
+    padding-top: 0;
+    background: url(../img/desc_bg-2.png), url(../img/desc_bg-3.png);
+    background-repeat: no-repeat;
+    background-position: right top, right top 65%;
+  }
+
+  .desc__wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .actions__card {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+  }
+
+  .actions__card-pic {
+    order: 1;
+  }
+
+  .actions__card-content,
+  .actions__card-description {
+    order: 0;
+  }
+  .map__content {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .feedback__form-field {
+    width: 600px;
+    height: 84px;
+  }
+
+  .feedback__form_submit {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    width: 150px;
+    height: 60px;
+  }
+}
+/* Media end*/
