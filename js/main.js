@@ -4,12 +4,14 @@ const headerItems = document.querySelectorAll(".header__item:not(:last-child)");
 const headerLinks = document.querySelectorAll(".header__link");
 let circle = document.createElement("div");
 circle.style.cssText = `width: 6px; height: 6px; margin: 0 auto ; background-color: #FA5652; border-radius: 100%;`;
+if (window.innerWidth >= 770) {
+  headerLinks.forEach(link => link.addEventListener("click", function () {
+    link.classList.add("highlighter");
+    setTimeout(() => link.classList.remove("highlighter"), 2000);
+    link.after(circle);
+  }));
+}
 
-headerLinks.forEach(link => link.addEventListener("click", function () {
-  link.classList.add("highlighter");
-  setTimeout(() => link.classList.remove("highlighter"), 2000);
-  link.after(circle);
-}));
 
 //btn
 const button = document.querySelector('.feedback__form_submit');
