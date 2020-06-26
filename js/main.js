@@ -74,3 +74,16 @@ button.addEventListener('click', updateButtonMsg);
   };
   scrollTo();
 }());
+
+//burger handler
+(function () {
+  const burgeItem = document.querySelector('.burger');
+  const menu = document.querySelector('.header__nav');
+  const closedItem = document.querySelector('.header__nav-close');
+  burgeItem.addEventListener('click', () => {
+    menu.classList.add('header__nav_active');
+  });
+  closedItem.addEventListener('click', () => {
+    menu.classList.remove('header__nav_active');
+  });
+}());
